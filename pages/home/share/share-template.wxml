@@ -1,0 +1,53 @@
+<template name="shareTemplate">
+  <view class="top-contanier">
+    <scroll-view scroll-x="true" style="width:100%">
+      <view class="top">
+        <view class="top-item">
+          <l-avatar src="/images/home/share/umbrella.jpg" size="100" mode="aspectFill" text="雨伞" placement="bottom" />
+        </view>
+        <view class="top-item">
+          <l-avatar src="/images/home/share/addaptor1.jpg" size="100" mode="aspectFill" text="转换器" placement="bottom" />
+        </view>
+        <view class="top-item">
+          <l-avatar src="/images/home/share/office-supplies.jpg" size="100" mode="aspectFill" text="办公用品" placement="bottom" />
+        </view>
+        <view class="top-item">
+          <l-avatar src="/images/home/share/basketball.png" size="100" mode="aspectFill" text="篮球" placement="bottom" />
+        </view>
+        <view class="top-item">
+          <l-avatar src="/images/home/share/book.jpg" size="100" mode="aspectFill" text="书籍" placement="bottom" />
+        </view>
+        <view class="top-item">
+          <l-avatar src="/images/home/share/bookshelf.jpg" size="100" mode="aspectFill" text="储物柜" placement="bottom" />
+        </view>
+        <view class="top-item">
+          <l-avatar src="/images/home/share/addaptor2.jpg" size="100" mode="aspectFill" text="显示屏" placement="bottom" />
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <!-- <view class="location">
+    <text>地点</text>
+  </view> -->
+
+  <view class="kind">
+    <l-tabs bind:linchange="changeTabs" l-class-line="tabLineClass">
+      <l-tabpanel tab="文理学部" key="deal" slot="deal">
+        <view class="tab-content">
+          文理学部
+        </view>
+      </l-tabpanel>
+      <l-tabpanel tab="信息学部" key="share" slot="share">
+        <view class="tab-content">
+          信息学部
+        </view>
+      </l-tabpanel>
+      <l-tabpanel tab="工学部" key="ask" slot="ask">
+        <view class="tab-content">
+          工学部
+        </view>
+      </l-tabpanel>
+    </l-tabs>
+  </view>
+</template>

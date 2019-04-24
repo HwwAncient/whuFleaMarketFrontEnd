@@ -1,3 +1,5 @@
+var askData = require('../../data-test/ask-data.js')
+
 Page({
 
   data: {
@@ -9,7 +11,10 @@ Page({
   },
 
   onLoad: function (options) {
-
+    this.data.askList = askData.askList;
+    // this.setData({
+    //   askList: askData.askList
+    // });
   },
 
   onCategoryTap:function(){

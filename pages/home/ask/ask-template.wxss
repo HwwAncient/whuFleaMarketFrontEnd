@@ -1,0 +1,9 @@
+.ask-info{
+  display: flex;
+  flex-direction: row;
+}
+
+.ask-info text{
+  margin-right: 20rpx;
+  margin-bottom: 5rpx;
+}

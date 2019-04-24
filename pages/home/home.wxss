@@ -1,3 +1,6 @@
+@import "share/share-template.wxss";
+@import "ask/ask-template.wxss";
+
 .tabLineClass{
   background:red !important;
   width: 170rpx !important;

@@ -1,0 +1,17 @@
+<template name="askTemplate">
+  <view>
+    <l-card type="avatar" l-class="card" image="{{owner.headSrc}}" title="{{owner.name}}" describe="国际软件学院">
+      <view class="ask-info">
+        <text class="address">{{address}}</text>
+        <text class="time">{{time}}</text>
+      </view>
+      <view class="avter-content">
+        {{content}}
+      </view>
+
+      <l-tag shape="circle" bg-color="red" font-color="white" slot="more" size="large">
+        联系TA
+      </l-tag>
+    </l-card>
+  </view>
+</template>

@@ -1,0 +1,22 @@
+.top{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+}
+.top-item{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top:20px;
+}
+.tabLineClass{
+  background:red !important;
+  width: 170rpx !important;
+}
+
+.kind{
+  margin-top: 10px;
+}

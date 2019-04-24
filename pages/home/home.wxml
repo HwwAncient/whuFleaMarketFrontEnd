@@ -1,3 +1,6 @@
+<import src="share/share-template.wxml" />
+<import src="ask/ask-template.wxml" />
+
 <view class='container'>
 
   <view class='header-search'>
@@ -18,12 +21,15 @@
       </l-tabpanel>
       <l-tabpanel tab="共享" key="share" slot="share">
         <view class="tab-content">
-          共享页面
+          <template is="shareTemplate" />
+
         </view>
       </l-tabpanel>
       <l-tabpanel tab="求购" key="ask" slot="ask">
         <view class="tab-content">
-          求购页面
+          <block wx:for="{{askList}}" wx:for-item="item" wx:key="key" wx:for-index="idx">
+            <template is="askTemplate" data="{{...item}}"/> 求购
+          </block>
         </view>
       </l-tabpanel>
     </l-tabs>
