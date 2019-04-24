@@ -11,10 +11,10 @@ Page({
   },
 
   onLoad: function (options) {
-    this.data.askList = askData.askList;
-    // this.setData({
-    //   askList: askData.askList
-    // });
+    //this.data.askList = askData.askList;
+    this.setData({
+      askList: askData.askList
+    });
   },
 
   onCategoryTap:function(){

@@ -28,7 +28,7 @@
       <l-tabpanel tab="求购" key="ask" slot="ask">
         <view class="tab-content">
           <block wx:for="{{askList}}" wx:for-item="item" wx:key="key" wx:for-index="idx">
-            <template is="askTemplate" data="{{...item}}"/> 求购
+            <template is="askTemplate" data="{{...item}}"/> 
           </block>
         </view>
       </l-tabpanel>

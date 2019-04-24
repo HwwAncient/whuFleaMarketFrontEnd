@@ -27,5 +27,24 @@ var ask_Database = [{
     status: 0,
     category: 1,
     mode: 0
+  },
+  {
+    id: 1,
+    owner: {
+      id: "1",
+      name: "王五",
+      headSrc: "/images/home/user-image3.jpg",
+      school: "测绘学院学院"
+    },
+    address: "13舍",
+    time: "11:50",
+    content: "收安卓机 价格好商量",
+    status: 0,
+    category: 1,
+    mode: 0
   }
 ]
+
+module.exports = {
+  askList: ask_Database
+}
