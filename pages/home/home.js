@@ -1,4 +1,4 @@
-var askData = require('../../data-test/ask-data.js')
+var askData = require('../../fake-data/ask-data.js')
 
 Page({
 

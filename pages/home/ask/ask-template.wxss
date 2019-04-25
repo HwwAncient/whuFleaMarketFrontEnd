@@ -7,3 +7,7 @@
   margin-right: 20rpx;
   margin-bottom: 5rpx;
 }
+
+.askItem{
+  margin-top: 40rpx;
+}

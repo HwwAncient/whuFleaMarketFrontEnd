@@ -1,5 +1,5 @@
 <template name="askTemplate">
-  <view>
+  <view class='askItem'>
     <l-card type="avatar" l-class="card" image="{{owner.headSrc}}" title="{{owner.name}}" describe="{{owner.school}}">
       <view class="ask-info">
         <text class="address">{{address}}</text>
