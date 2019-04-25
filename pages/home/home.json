@@ -3,11 +3,12 @@
     "l-search-bar":"/dist/search-bar/index",
     "l-tabs":"/dist/tabs/index",
     "l-tabpanel":"/dist/tabpanel/index",
-    "h-category":"/components/category/index",
-    "h-choice":"/components/choice/index",
     "l-avatar":"/dist/avatar/index",
     "l-card": "/dist/card/index",
     "l-icon": "/dist/icon/index",
-    "l-tag": "/dist/tag/index"
+    "l-tag": "/dist/tag/index",
+    "h-category": "/components/category/index",
+    "h-choice": "/components/choice/index",
+    "h-ask-card":"/components/home/ask-card/index"
   }
 }

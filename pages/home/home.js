@@ -7,14 +7,18 @@ Page({
     isCancelShown:false,
     isCategoryShown:true,
     isContentShown:true,
-    tabActiveKey: "deal"
+    tabActiveKey: "deal",
+    askList:[],
+    dealList:[]
   },
 
   onLoad: function (options) {
-    //this.data.askList = askData.askList;
+
     this.setData({
-      askList: askData.askList
+      askList: askData.askList,
+      dealList: askData.dealList
     });
+    
   },
 
   onCategoryTap:function(){

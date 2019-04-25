@@ -3,6 +3,7 @@
 
 <view class='container'>
 
+  <!-- 1. 搜索框部分 -->
   <view class='header-search'>
     <l-search-bar placeholder="搜索" show-cancel="{{isCancelShown}}" bind:linconfirm="onSearchConfirm" bind:linfocus="onSearchFocus" bind:hwwcancel="onSearchCancel">
       <h-category wx:if="{{isCategoryShown}}" bind:tap="onCategoryTap" />
@@ -10,13 +11,16 @@
     <h-choice wx:if="{{isChoiceShown}}" bind:choiceListTap="onChoiceListTap" />
   </view>
 
+  <!-- 2. 页面显示内容部分 -->
   <!-- 此处必须要使用wx:if而不能使用hidden，因为if每次都会重新渲染组件，会重新加载tabs的activeKey，从而保留点击分类按钮前tabs的activeKey状态 -->
-  <view wx:if="{{isContentShown}}">
+  <view class="content" wx:if="{{isContentShown}}">
 
     <l-tabs bind:linchange="changeTabs" bind:linchange="onTabChange" l-class-line="tabLineClass" active-key="{{tabActiveKey}}">
       <l-tabpanel tab="买卖" key="deal" slot="deal">
         <view class="tab-content">
-          买卖页面
+          <block wx:for="{{dealList}}" wx:for-item="dealItem" wx:key="key" wx:for-index="idx">
+            <h-ask-card cardItem="{{dealItem}}" />
+          </block>
         </view>
       </l-tabpanel>
       <l-tabpanel tab="共享" key="share" slot="share">
@@ -33,6 +37,11 @@
       </l-tabpanel>
     </l-tabs>
 
+  </view>
+
+  <!-- 3. 搜索结果显示部分 -->
+  <view class='search-content' wx:if="{{isCancelShown}}">
+    显示搜索结果
   </view>
 
 </view>
