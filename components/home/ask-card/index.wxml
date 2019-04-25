@@ -1,0 +1,6 @@
+<view class='cardItem'>
+  <l-card type="avatar" l-class="card" image="{{cardItem.owner.headSrc}}" title="{{cardItem.owner.name}}" describe="{{cardItem.owner.school}}">
+    <!-- TODO 填充其余内容，description暂时只写school，其余要求内容可以显示在商品详情页面中或者在剩下的content中 -->
+    <l-button size="mini" slot="more" bind:lintap="onButtonTap">去看看</l-button>
+  </l-card>
+</view>
