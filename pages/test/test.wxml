@@ -1,4 +1,0 @@
-<l-button type="default" bindtap="onDefaultTap">default</l-button>
-<l-button type="error">error</l-button>
-<l-button type="success">success</l-button>
-<l-button type="warning">warning</l-button>
