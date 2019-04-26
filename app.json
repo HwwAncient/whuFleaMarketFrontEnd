@@ -6,7 +6,9 @@
     "pages/plus/ask/ask",
     "pages/plus/store/store",
     "pages/plus/plus",
-    "pages/home/home-category/home-category"
+    "pages/home/home-category/home-category",
+    "pages/home/deal/detail-free/detail-free",
+    "pages/home/deal/detail-proxy/detail-proxy"
   ],
   "window": {
     "backgroundTextStyle": "light",
