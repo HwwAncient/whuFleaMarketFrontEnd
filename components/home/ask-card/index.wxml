@@ -1,6 +1,22 @@
-<view class='cardItem'>
-  <l-card type="avatar" l-class="card" image="{{cardItem.owner.headSrc}}" title="{{cardItem.owner.name}}" describe="{{cardItem.owner.school}}">
+<view class='card-container'>
+  <l-card type="avatar" l-class="card" image="{{cardItem.owner.headSrc}}" title="{{cardItem.owner.name}}" describe="{{university + ' ' +cardItem.owner.school}}">
+
     <!-- TODO 填充其余内容，description暂时只写school，其余要求内容可以显示在商品详情页面中或者在剩下的content中 -->
     <l-button size="mini" slot="more" bind:lintap="onButtonTap">去看看</l-button>
+
+    <view class='info-container'>
+      <text class='info-time'>{{"发布于 " + cardItem.time}}</text>
+      <text class='info-address'>{{cardItem.mode == 1 ? cardItem.address + ' ' + proxy : free}}</text>
+      <text class='info-content'>{{"出售 " + cardItem.title}}</text>
+    </view>
+
+    <swiper catchtap='onSwiperTap' vertical='{{false}}' indicator-dots='true' autoplay='true' interval='5000'>
+      <block wx:for="{{cardItem.images}}" wx:for-item="imageItem" wx:key="key" wx:for-index="idx">
+        <swiper-item>
+          <image src='{{imageItem}}' />
+        </swiper-item>
+      </block>
+    </swiper>
+
   </l-card>
 </view>
