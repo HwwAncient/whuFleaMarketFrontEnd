@@ -3,6 +3,6 @@
 
 .tabLineClass{
   background:red !important;
-  width: 170rpx !important;
+  width: 180rpx !important;
 }
 
