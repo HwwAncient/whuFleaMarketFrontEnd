@@ -1,0 +1,20 @@
+<template name="share-Location-Template">
+  <view class='shareLocation'>
+    <l-card type="cover" plaintext="true">
+      <image src="/images/home/share/umbrella2.jpg" />
+      <text>
+      共享商品信息
+      </text>
+      <view class="content">
+      转换器
+      </view>
+      <view class="content">
+      品牌：
+      </view>
+      <view class="useButton">
+        <l-button type="error" shape="semicircle">使用</l-button>
+      </view>
+
+    </l-card>
+  </view>
+</template>

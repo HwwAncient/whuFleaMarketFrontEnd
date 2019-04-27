@@ -7,6 +7,7 @@
     "l-card": "/dist/card/index",
     "l-icon": "/dist/icon/index",
     "l-tag": "/dist/tag/index",
+    "l-button": "/dist/button/index",
     "h-category": "/components/category/index",
     "h-choice": "/components/choice/index",
     "h-ask-card":"/components/home/ask-card/index"

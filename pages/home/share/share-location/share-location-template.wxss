@@ -1,0 +1,15 @@
+.content{
+  margin-top:10px;
+}
+
+.useButton{
+  display: flex;
+  justify-content: flex-end;
+  margin-top:10px;
+}
+.text{
+  color: #333;
+}
+.content{
+  color: #666;
+}

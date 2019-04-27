@@ -1,3 +1,5 @@
+@import "share-location/share-location-template.wxss";
+
 .top{
   display:flex;
   flex-direction: row;

@@ -1,3 +1,5 @@
+<import src="share-location/share-location-template.wxml" />
+
 <template name="shareTemplate">
   <view class="top-contanier">
     <scroll-view scroll-x="true" style="width:100%">
@@ -35,16 +37,18 @@
     <l-tabs bind:linchange="changeTabs" l-class-line="tabLineClass">
       <l-tabpanel tab="文理学部" key="deal" slot="deal">
         <view class="tab-content">
-          文理学部
+         <template is="share-Location-Template"/>
         </view>
       </l-tabpanel>
       <l-tabpanel tab="信息学部" key="share" slot="share">
         <view class="tab-content">
+         <template is="share-Location-Template"/>
           信息学部
         </view>
       </l-tabpanel>
       <l-tabpanel tab="工学部" key="ask" slot="ask">
         <view class="tab-content">
+         <template is="share-Location-Template"/>
           工学部
         </view>
       </l-tabpanel>

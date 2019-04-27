@@ -16,7 +16,8 @@ Page({
 
     this.setData({
       askList: askData.askList,
-      dealList: askData.dealList
+      dealList: askData.dealList,
+      shareList: askData.shareList
     });
     
   },
