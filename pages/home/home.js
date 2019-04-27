@@ -1,4 +1,4 @@
-var askData = require('../../fake-data/ask-data.js')
+var data_base = require('../../fake-data/ask-data.js')
 
 Page({
 
@@ -15,9 +15,9 @@ Page({
   onLoad: function (options) {
 
     this.setData({
-      askList: askData.askList,
-      dealList: askData.dealList,
-      shareList: askData.shareList
+      askList: data_base.askList,
+      dealList: data_base.dealList,
+      shareList: data_base.shareList
     });
     
   },
