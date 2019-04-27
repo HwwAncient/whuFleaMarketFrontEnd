@@ -135,8 +135,46 @@ const deal_Database = [{
   }
 ]
 
+const deal_detail_free = {
+  "images": [
+    "/images/home/deal/bookshelf.jpg",
+    "/images/home/deal/addaptor2.jpg",
+    "/images/home/deal/book.jpg"
+  ],
+  "description": "半新，可以退换，允许面谈砍价",
+  "price": "67.3",
+  "newDegree": 1,
+  "mode": 2,
+  "address": {
+    "name": "信息学部宿舍3舍",
+    "longitude": 34.436456,
+    "latitude": 234.34535435
+  },
+  "title": "《活着》",
+}
+
+const deal_detail_proxy = {
+  "images": [
+    "/images/home/deal/bookshelf.jpg",
+    "/images/home/deal/addaptor2.jpg",
+    "/images/home/deal/book.jpg"
+  ],
+  "description": "刚买不久，可以退换，允许面谈砍价",
+  "price": "57.3",
+  "newDegree": 0,
+  "mode": 1,
+  "address": {
+    "name": "信息学部宿舍C4舍",
+    "longitude": 34.436456,
+    "latitude": 234.34535435
+  },
+  "title": "书柜",
+}
+
 module.exports = {
   askList: ask_Database,
   dealList: deal_Database,
-  shareList: share_database
+  shareList: share_database,
+  dealDetailFree: deal_detail_free,
+  dealDetailProxy: deal_detail_proxy
 }
