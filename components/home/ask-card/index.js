@@ -13,6 +13,14 @@ Component({
   methods: {
 
     onButtonTap: function() {
+      this.goToDetailPage()
+    },
+
+    onSwiperTap: function() {
+      this.goToDetailPage()
+    },
+
+    goToDetailPage: function() {
       var dealId = this.properties.cardItem.id
       //利用dealId跳转到商品详情页面
       const detailProxy = "/pages/home/deal/detail-proxy/detail-proxy"
@@ -20,7 +28,6 @@ Component({
       wx.navigateTo({
         url: (this.properties.cardItem.mode == 1 ? detailProxy : detailFree) + "?dealId=" + dealId
       })
-
     }
 
   }
