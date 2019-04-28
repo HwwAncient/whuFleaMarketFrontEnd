@@ -9,7 +9,8 @@ Page({
     isContentShown:true,
     tabActiveKey: "deal",
     askList:[],
-    dealList:[]
+    dealList:[],
+    shareList:[]
   },
 
   onLoad: function (options) {

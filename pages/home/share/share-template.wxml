@@ -35,9 +35,12 @@
 
   <view class="kind">
     <l-tabs bind:linchange="changeTabs" l-class-line="tabLineClass">
+    
       <l-tabpanel tab="文理学部" key="deal" slot="deal">
         <view class="tab-content">
-         <template is="share-Location-Template"/>
+        <block wx:for="{{shareList}}" wx:for-item="shareItem" wx:key="key" wx:for-index="idx">
+         <template is="share-Location-Template" data="{{...shareItem}}"/>
+         </block>
         </view>
       </l-tabpanel>
       <l-tabpanel tab="信息学部" key="share" slot="share">

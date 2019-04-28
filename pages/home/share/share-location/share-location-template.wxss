@@ -13,3 +13,13 @@
 .content{
   color: #666;
 }
+
+.imgShow{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.likeIcon{
+  margin-top: 20rpx;
+}
