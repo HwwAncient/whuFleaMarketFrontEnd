@@ -1,7 +1,10 @@
 <template name="share-Location-Template">
   <view class='shareLocation'>
     <l-card type="cover" plaintext="true">
+    <view class="imgShow">
       <image src="/images/home/share/umbrella2.jpg" />
+      <l-icon class = "likeIcon" name="like" size="60"/>
+      </view>
       <text>
       共享商品信息
       </text>
