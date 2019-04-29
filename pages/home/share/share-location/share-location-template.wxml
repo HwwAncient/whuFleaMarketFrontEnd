@@ -20,7 +20,7 @@
         {{detailAddress}}
       </view>
       <view class="useButton">
-        <l-button type="error" shape="semicircle">使用</l-button>
+        <l-button type="error" shape="semicircle" catchtap='useTap'>使用</l-button>
       </view>
 
     </l-card>

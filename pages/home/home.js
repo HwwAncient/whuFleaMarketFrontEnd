@@ -78,6 +78,13 @@ Page({
       tabActiveKey:currentActiveKey
     })
     console.log(this.data.tabActiveKey)
+  },
+
+  useTap: function () {
+    wx.navigateTo({
+      url: 'share/share-detail/share-detail',
+    })
+    console.log("usetap")
   }
 
   
