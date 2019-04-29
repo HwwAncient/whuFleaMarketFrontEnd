@@ -1,1 +1,53 @@
-商品详情界面——代理点
+<view class='container'>
+
+  <swiper vertical='{{false}}' indicator-dots='true' autoplay='true' interval='5000'>
+    <block wx:for="{{dealDetailProxy.images}}" wx:for-item="imageItem" wx:key="key" wx:for-index="idx">
+      <swiper-item>
+        <image src='{{imageItem}}' />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class='info-container'>
+    <text class='info-header'>商品信息：</text>
+    <view class='info-content'>
+      <text>{{dealDetailProxy.description}}</text>
+      <text>价格：{{dealDetailProxy.price}}</text>
+      <text>物品使用全新程度：{{tool.filter(dealDetailProxy.newDegree)}}</text>
+      <text class='info-location'>商家代理点：{{dealDetailProxy.address.name}}</text>
+    </view>
+  </view>
+
+  <view class='bottom-bar'>
+    <view>
+      <image></image>
+      <text></text>
+    </view>
+    <view>
+      <image></image>
+      <text></text>
+    </view>
+  </view>
+
+</view>
+
+<wxs module="tool">
+  var filter = function(newDegree) {
+
+    if (newDegree == 0) {
+      return '旧'
+    }
+    if (newDegree == 1) {
+      return '半新'
+    }
+    if (newDegree == 2) {
+      return '全新'
+    }
+
+    return '商家未提供，可私聊咨询'
+  }
+
+  module.exports = {
+    filter: filter
+  }
+</wxs>

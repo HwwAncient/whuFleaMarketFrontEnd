@@ -1,0 +1,38 @@
+swiper {
+  width: 100%;
+  height: 500rpx;
+}
+
+swiper image {
+  width: 100%;
+  height: 100%;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+}
+
+.info-header{
+  font-size: 35rpx;
+}
+
+.info-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 25rpx;
+  margin-top: 20rpx;
+}
+
+.info-content text{
+  line-height: 60rpx;
+}
+
+.info-location{
+  color: goldenrod;
+  margin-top: 25rpx;
+
+}
