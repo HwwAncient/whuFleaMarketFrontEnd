@@ -15,7 +15,7 @@ swiper image {
   margin-left: 30rpx;
 }
 
-.info-header{
+.info-header {
   font-size: 35rpx;
 }
 
@@ -27,12 +27,46 @@ swiper image {
   margin-top: 20rpx;
 }
 
-.info-content text{
+.info-content text {
   line-height: 60rpx;
 }
 
-.info-location{
+.info-location {
   color: goldenrod;
   margin-top: 25rpx;
+}
 
+.bottom-bar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 120rpx;
+  background-color: rgba(252, 252, 252, 0.986);
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0px;
+  border-top: solid 1rpx #ddd;
+  z-index: 100;
+}
+
+.block{
+  height:150rpx;
+}
+
+.bottom-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom-item image {
+  width: 55rpx;
+  height: 55rpx;
+}
+
+map{
+  margin-top: 30rpx;
+  width: 100%;
+  height:400rpx;
 }

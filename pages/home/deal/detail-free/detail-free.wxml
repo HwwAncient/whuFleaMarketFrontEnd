@@ -1,6 +1,6 @@
 <view class='container'>
 
-  <swiper catchtap='onSwiperTap' vertical='{{false}}' indicator-dots='true' autoplay='true' interval='5000'>
+  <swiper vertical='{{false}}' indicator-dots='true' autoplay='true' interval='5000'>
     <block wx:for="{{dealDetailFree.images}}" wx:for-item="imageItem" wx:key="key" wx:for-index="idx">
       <swiper-item>
         <image src='{{imageItem}}' />
@@ -19,15 +19,22 @@
   </view>
 
   <view class='bottom-bar'>
-    <view>
-      <image></image>
-      <text></text>
+    <view class='bottom-item'>
+      <image src='{{collectImgUrl}}' />
+      <text>收藏</text>
     </view>
-    <view>
-      <image></image>
-      <text></text>
+    <view class='bottom-item'>
+      <image src='{{chatImgUrl}}' />
+      <text>联系她</text>
     </view>
   </view>
+
+  <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="16" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" />
+
+  <!-- 用于底部占位，防止内容信息被bottom-bar遮挡覆盖，高度比bottom-bar略大 -->
+  <view class='block' />
+
+
 
 </view>
 
