@@ -147,8 +147,8 @@ const deal_detail_free = {
   "mode": 2,
   "address": {
     "name": "信息学部宿舍3舍",
-    "longitude": 34.436456,
-    "latitude": 234.34535435
+    "latitude": 30.53925933944048,
+    "longitude": 114.35536980628967
   },
   "title": "《活着》",
 }
@@ -165,8 +165,8 @@ const deal_detail_proxy = {
   "mode": 1,
   "address": {
     "name": "信息学部宿舍C4舍",
-    "longitude": 34.436456,
-    "latitude": 234.34535435
+    "latitude": 30.53925933944048,
+    "longitude": 114.35536980628967
   },
   "title": "书柜",
 }
