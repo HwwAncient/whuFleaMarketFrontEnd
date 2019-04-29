@@ -1,3 +1,7 @@
+.shareLocation{
+  margin-top:40rpx;
+}
+
 .content{
   margin-top:10px;
 }
