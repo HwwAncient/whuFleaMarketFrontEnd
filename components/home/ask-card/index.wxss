@@ -9,7 +9,7 @@
 }
 
 .info-container text {
-  color: black;
+  color: #666;
 }
 
 .info-address {

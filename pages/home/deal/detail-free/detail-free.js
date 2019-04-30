@@ -9,6 +9,8 @@ Page({
     longitude: 0,
     latitude: 0,
     markers: [],
+    university:"武汉大学",
+    markerIconPath:"/images/home/deal/detail/location.jpg"
     // polyline: [{
     //   points: [{
     //     latitude: 30.53925933944048,
@@ -29,7 +31,7 @@ Page({
 
     // map中标记目的位置的marker
     var marker = {
-      // iconPath:"/images/1.png",
+      iconPath: this.data.markerIconPath,
       id: 0,
       latitude: 0,
       longitude: 0,
@@ -64,6 +66,8 @@ Page({
     wx.openLocation({
       latitude: this.data.latitude,
       longitude: this.data.longitude,
+      name: this.data.dealDetailFree.address.name,
+      address: `${this.data.university} ${this.data.dealDetailFree.address.name}`
     })
   }
 
