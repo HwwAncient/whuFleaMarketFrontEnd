@@ -3,6 +3,7 @@ var data_base = require('../../../../fake-data/ask-data.js')
 Page({
 
   data: {
+    dealId:"",
     dealDetailFree: null,
     collectImgUrl: "/images/home/deal/detail/collect.png",
     chatImgUrl: "/images/home/deal/detail/chat.png",
@@ -46,6 +47,7 @@ Page({
     marker.longitude = longitude;
     var markers = [marker]
     this.setData({
+      dealId: dealId,
       dealDetailFree: data_base.dealDetailFree,
       longitude: longitude,
       latitude: latitude,

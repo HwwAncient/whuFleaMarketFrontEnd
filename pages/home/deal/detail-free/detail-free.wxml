@@ -20,7 +20,7 @@
 
   <view class='bottom-bar'>
     <view class='bottom-item'>
-      <image src='{{collectImgUrl}}' />
+      <h-like class="like" dealId="{{dealId}}" />
       <text>收藏</text>
     </view>
     <view class='bottom-item'>
