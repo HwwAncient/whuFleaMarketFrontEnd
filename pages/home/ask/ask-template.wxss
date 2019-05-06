@@ -6,6 +6,7 @@
 .ask-info text{
   margin-right: 20rpx;
   margin-bottom: 5rpx;
+  font-size: 12px;
 }
 
 .askItem{
