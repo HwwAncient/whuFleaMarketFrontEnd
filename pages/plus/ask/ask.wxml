@@ -1,2 +1,34 @@
 <!--pages/plus/ask/ask.wxml-->
-<text>pages/plus/ask/ask.wxml</text>
+<view class="container">
+
+ <!--1.标题描述部分-->
+ <view class="content">
+   <l-textarea maxlength="140" rules="rules" placeholder="在这里详细描述一下所求物品的规格尺寸、新旧程度以及一些其他要求吧！" indicator="{{false}}">   
+   </l-textarea>
+   <l-icon name="address"/>
+
+ </view>
+
+
+ <!--2.添加照片-->
+ <view class="picture">
+   <l-image-picker custom="{{true}}" count="9" bind:linchange="onChangeTap" size-type="compressed">
+   <view>
+     <image src="/images/home/发布二手商品界面/camera.png" />
+   </view>
+   </l-image-picker>
+ </view>
+
+ <!--3.标签分类-->
+ <view class="tag">
+   <l-list title= "分类" desc="给所求物品分个类吧" />
+   <l-list title= "价格" desc="给所求物品开个价吧" />
+   <l-list title= "发布模式" desc="自由当面交易或通过代理点交易" />
+ </view>
+
+ <!--4.发布按钮-->
+  <view class="publish">
+   <l-button size="large">发布</l-button>
+   
+  </view>
+</view>

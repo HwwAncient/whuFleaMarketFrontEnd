@@ -1,3 +1,13 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "l-input": "/dist/input/index",
+    "l-textarea": "/dist/textarea/index",
+    "l-image-picker": "/dist/image-picker/index",
+    "l-list": "/dist/list/index",
+    "l-button": "/dist/button/index",
+    "l-icon": "/dist/icon/index",
+    "l-radio-group": "/dist/radio-group/index",
+    "l-radio": "/dist/radio/index"
+  
+  }
 }
