@@ -7,7 +7,8 @@ const likeModel = new LikeModel()
 Component({
 
   properties: {
-    dealId: String
+    dealId: String,
+    category:String
   },
 
   data: {
@@ -19,7 +20,7 @@ Component({
   ready: function() {
    
     console.log(this.properties.dealId)
-    let initLikeStatus = likeModel.getLikeStatus(this.properties.dealId, "deal")
+    let initLikeStatus = likeModel.getLikeStatus(this.properties.dealId, this.properties.category)
     this.setData({
       like: initLikeStatus
     })
@@ -30,7 +31,7 @@ Component({
 
     onLike: function(event) {
       console.log(this.properties.dealId)
-      let newLikeStatus = likeModel.updateLikeStatus(this.properties.dealId, "deal")
+      let newLikeStatus = likeModel.updateLikeStatus(this.properties.dealId, this.properties.category)
       this.setData({
         like: newLikeStatus
       })

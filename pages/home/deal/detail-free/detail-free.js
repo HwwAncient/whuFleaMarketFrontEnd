@@ -64,13 +64,17 @@ Page({
   },
 
   // 点击小程序地图组件上的目的地marker跳转到微信原生地图
-  markertap(e) {
+  onMarkerTap(e) {
     wx.openLocation({
       latitude: this.data.latitude,
       longitude: this.data.longitude,
       name: this.data.dealDetailFree.address.name,
       address: `${this.data.university} ${this.data.dealDetailFree.address.name}`
     })
+  },
+
+  onChatTap(){
+
   }
 
 })
