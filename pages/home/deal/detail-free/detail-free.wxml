@@ -20,7 +20,7 @@
 
   <view class='bottom-bar'>
     <view class='bottom-item'>
-      <h-like class="like" dealId="{{dealId}}" category="deal"/>
+      <h-like class="like" likeId="{{dealId}}" category="deal"/>
       <text>收藏</text>
     </view>
     <view class='bottom-item' bindtap='onChatTap'>
