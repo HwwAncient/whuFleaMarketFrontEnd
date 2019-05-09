@@ -46,6 +46,7 @@ Page({
     marker.longitude = longitude;
     var markers = [marker]
     this.setData({
+      dealId: dealId,
       dealDetailProxy: data_base.dealDetailProxy,
       longitude: longitude,
       latitude: latitude,
@@ -68,6 +69,13 @@ Page({
       longitude: this.data.longitude,
       name: this.data.dealDetailProxy.address.name,
       address: `${this.data.university} ${this.data.dealDetailProxy.address.name}`
+    })
+  },
+
+  onChatTap() {
+    wx.showToast({
+      title: '抱歉，联系功能暂未开发',
+      icon: "none"
     })
   }
 

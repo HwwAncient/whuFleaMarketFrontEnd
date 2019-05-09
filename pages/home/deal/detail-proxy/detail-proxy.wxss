@@ -66,9 +66,15 @@ swiper image {
   align-items: center;
 }
 
+.like{
+  position: relative;
+  top:7rpx;
+  left: 3rpx;
+}
+
 .bottom-item image {
-  width: 55rpx;
-  height: 45rpx;
+  width: 60rpx;
+  height: 60rpx;
 }
 
 .bottom-item text{
@@ -86,7 +92,7 @@ map {
 .map-tip{
   background: #fff;
   width: 200rpx;
-  height: 25rpx;
+  height: 30rpx;
   display: flex;
   flex-direction: row;
   align-items: center;

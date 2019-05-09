@@ -40,13 +40,20 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 1,
 			"list": [
 				{
 					"id": 0,
 					"name": "自由买卖详情界面",
 					"pathName": "pages/home/deal/detail-free/detail-free",
 					"query": "dealId=5",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "代理点买卖详情界面",
+					"pathName": "pages/home/deal/detail-proxy/detail-proxy",
+					"query": "dealId=29",
 					"scene": null
 				}
 			]

@@ -74,7 +74,10 @@ Page({
   },
 
   onChatTap(){
-
+    wx.showToast({
+      title: '抱歉，联系功能暂未开发',
+      icon: "none"
+    })
   }
 
 })

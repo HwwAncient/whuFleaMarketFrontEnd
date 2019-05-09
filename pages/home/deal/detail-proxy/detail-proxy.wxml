@@ -20,10 +20,10 @@
 
   <view class='bottom-bar'>
     <view class='bottom-item'>
-      <image src='{{collectImgUrl}}' />
+      <h-like class="like" likeId="{{dealId}}" category="deal"/>
       <text>收藏</text>
     </view>
-    <view class='bottom-item'>
+    <view class='bottom-item' bindtap='onChatTap'>
       <image src='{{chatImgUrl}}' />
       <text>联系她</text>
     </view>
