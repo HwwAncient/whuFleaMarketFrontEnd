@@ -1,13 +1,27 @@
 <!--pages/home/share/share-detail/share-detail.wxml-->
+<view>
+  <view class="userTable">
+    <l-input label="使用者姓名" colon="true" label-width="240" placeholder="这里是必填项" />
+    <l-input label="手机号码" colon="true" placeholder="这里是必填项" />
+    <l-input label="物品所在地" colon="true" label-width="240" value='{{shareItem.detailAddress}}' />
+  </view>
 
-<view class="userTable">
-<l-input label="使用者" colon="true" placeholder="这里是必填项" />
-<l-input label="手机号码" colon="true" placeholder="这里是必填项" />
-<l-input label="地址" colon="true" placeholder="这里是必填项" />
+  <view class="objInfo">
+
+    <l-card type="primary" image="{{shareItem.images[0]}}">
+      <!-- 此处为content -->
+      <text>{{shareItem.information}}</text>
+    </l-card>
+  </view>
+
+  <view class="warning">
+    <l-card type="primary" plaintext="true">
+      <text>
+       注：此物品为共享商品，使用该物品需付一定的押金，使用后请在六小时内放回原处，押金在确认放回原处后将退回！谢谢配合！
+   </text>
+      <text>
+  （总计价格包括押金30元及使用费用2元）
+  </text>
+    </l-card>
+  </view>
 </view>
-
-<view class="objInfo">
-<text>{{shareItem.information}}</text>
-
-</view>
-

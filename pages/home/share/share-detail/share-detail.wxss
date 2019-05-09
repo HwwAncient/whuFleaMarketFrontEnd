@@ -1,3 +1,8 @@
 .objInfo{
   margin-top: 10px;
 }
+
+.warning{
+  margin-left: 5rpx;
+  margin-right: 5rpx;
+}
