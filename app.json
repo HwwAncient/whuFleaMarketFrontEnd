@@ -8,7 +8,8 @@
     "pages/plus/plus",
     "pages/home/home-category/home-category",
     "pages/home/deal/detail-free/detail-free",
-    "pages/home/deal/detail-proxy/detail-proxy"
+    "pages/home/deal/detail-proxy/detail-proxy",
+    "pages/home/share/share-detail/share-detail"
   ],
   "window": {
     "backgroundTextStyle": "light",

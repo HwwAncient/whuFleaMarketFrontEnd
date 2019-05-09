@@ -9,7 +9,7 @@
             </swiper-item>
           </block>
         </swiper>
-        <l-icon class="likeIcon" name="like" size="60" />
+        <h-like />
       </view>
       <l-tag size="large" bg-color="#999">共享商品信息</l-tag>
       

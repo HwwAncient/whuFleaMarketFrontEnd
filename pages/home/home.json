@@ -10,6 +10,7 @@
     "l-button": "/dist/button/index",
     "h-category": "/components/category/index",
     "h-choice": "/components/choice/index",
-    "h-ask-card":"/components/home/ask-card/index"
+    "h-ask-card":"/components/home/ask-card/index",
+    "h-like":"/components/like/index"
   }
 }
