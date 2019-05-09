@@ -1,1 +1,8 @@
-/* pages/home/share/share-detail/share-detail.wxss */
+.objInfo{
+  margin-top: 10px;
+}
+
+.warning{
+  margin-left: 5rpx;
+  margin-right: 5rpx;
+}

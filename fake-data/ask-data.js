@@ -64,6 +64,16 @@ var share_database = [{
     "information": "雨伞不同样式，型号：中小型，品牌：天堂",
     "detailAddress": "信息学部青楼1楼",
     "status": 0
+  },
+  {
+    "id": "57",
+    "images": [
+      "/images/home/share/umbrella.jpg",
+      "/images/home/share/umbrella2.jpg",
+    ],
+    "information": "雨伞，型号：中小型，品牌：天堂",
+    "detailAddress": "文理学部教5-1楼",
+    "status": 0
   }
 ]
 
