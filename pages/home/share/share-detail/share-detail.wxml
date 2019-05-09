@@ -1,6 +1,8 @@
 <!--pages/home/share/share-detail/share-detail.wxml-->
-<view>
-
-hwwwwww
+<view class="infoTable">
+<l-input label="使用者" colon="true" placeholder="这里是必填项" />
+<l-input label="手机号码" colon="true" placeholder="这里是必填项" />
+<l-input label="所在校区" colon="true" value="武汉大学信息学部" />
+<l-input label="物品所在地" colon="true" label-width="240" value="信息学部教1" />
 </view>
 
