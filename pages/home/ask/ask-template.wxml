@@ -9,7 +9,7 @@
         {{content}}
       </view>
 
-      <l-tag shape="circle" bg-color="red" font-color="white" slot="more" size="large">
+      <l-tag shape="circle" bg-color="red" font-color="white" slot="more" size="large" bind:lintap="linkTap">
         联系TA
       </l-tag>
     </l-card>

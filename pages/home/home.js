@@ -86,7 +86,12 @@ Page({
     wx.navigateTo({
       url: 'share/share-detail/share-detail' + "?shareItem=" + shareItem,
     })
-  }
+  },
 
+  linkTap: function(event) {
+    wx.navigateTo({
+      url: 'ask/chat/chat'
+    })
+  }
   
 })
