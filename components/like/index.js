@@ -19,14 +19,15 @@ Component({
 
   ready: function() {
    
-    console.log(this.properties.likeId)
+   
     if (this.properties.likeId != ""){
+      console.log(this.properties.likeId)
       let initLikeStatus = likeModel.getLikeStatus(this.properties.likeId, this.properties.category)
       this.setData({
         like: initLikeStatus
       })
     }
-    console.log(this.properties.likeId)
+
   },
 
   methods: {
