@@ -80,11 +80,12 @@ Page({
     console.log(this.data.tabActiveKey)
   },
 
-  useTap: function () {
+  useTap: function (event) {
+    console.log(event)
+    var shareItem = JSON.stringify(event.currentTarget.dataset.shareItem)
     wx.navigateTo({
-      url: 'share/share-detail/share-detail',
+      url: 'share/share-detail/share-detail' + "?shareItem=" + shareItem,
     })
-    console.log("usetap")
   }
 
   

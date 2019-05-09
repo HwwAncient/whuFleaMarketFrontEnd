@@ -3,24 +3,24 @@
     <l-card type="cover" plaintext="true">
       <view class="imgShow">
         <swiper indicator-dots="true">
-          <block wx:for="{{images}}" wx:for-item="imgItem" wx:key="key" wx:for-index="idx">
+          <block wx:for="{{shareItem.images}}" wx:for-item="imgItem" wx:key="key" wx:for-index="idx">
             <swiper-item>
               <image src="{{imgItem}}" />
             </swiper-item>
           </block>
         </swiper>
-        <h-like class="like" likeId="{{id}}" category="share" />
+        <h-like class="like" likeId="{{shareItem.id}}" category="share" />
       </view>
       <l-tag size="large" bg-color="#999">共享商品信息</l-tag>
 
       <view class="content">
-        {{information}}
+        {{shareItem.information}}
       </view>
       <view class="content">
-        {{detailAddress}}
+        {{shareItem.detailAddress}}
       </view>
       <view class="useButton">
-        <l-button type="error" shape="semicircle" catchtap='useTap'>使用</l-button>
+        <l-button type="error" shape="semicircle" data-share-item="{{shareItem}}" bind:lintap='useTap'>使用</l-button>
       </view>
 
     </l-card>

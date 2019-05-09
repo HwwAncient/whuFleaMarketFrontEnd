@@ -1,1 +1,3 @@
-/* pages/home/share/share-detail/share-detail.wxss */
+.objInfo{
+  margin-top: 10px;
+}
