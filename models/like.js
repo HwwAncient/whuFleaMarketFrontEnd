@@ -1,15 +1,15 @@
 class LikeModel {
 
-  updateLikeStatus(id) {
-    let status = this.getLikeStatus(id);
-    wx.setStorageSync(`${id}-like`, !status)
+  updateLikeStatus(id, category) {
+    let status = this.getLikeStatus(id, "deal");
+    wx.setStorageSync(`${category}-like-${id}`, !status)
     return !status;
   }
 
-  getLikeStatus(id) {
-    let status = wx.getStorageSync(`${id}-like`)
+  getLikeStatus(id, category) {
+    let status = wx.getStorageSync(`${category}-like-${id}`)
     if (!status) {
-      wx.setStorageSync(`${id}-like`, false)
+      wx.setStorageSync(`${category}-like-${id}`, false)
       return false
     } else {
       return status
