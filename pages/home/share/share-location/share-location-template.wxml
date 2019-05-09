@@ -9,10 +9,10 @@
             </swiper-item>
           </block>
         </swiper>
-        <h-like />
+        <h-like class="like" likeId="{{id}}" category="share" />
       </view>
       <l-tag size="large" bg-color="#999">共享商品信息</l-tag>
-      
+
       <view class="content">
         {{information}}
       </view>

@@ -29,7 +29,7 @@
     </view>
   </view>
 
-  <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="16" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}">
+  <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="16" markers="{{markers}}" bindmarkertap="onMarkerTap" polyline="{{polyline}}">
     <cover-view class='map-tip'>
       <cover-image class='map-tip-image' src="{{markerIconPath}}" />
       <cover-view class='map-tip-content'>

@@ -1,7 +1,7 @@
 class LikeModel {
 
   updateLikeStatus(id, category) {
-    let status = this.getLikeStatus(id, "deal");
+    let status = this.getLikeStatus(id, category);
     wx.setStorageSync(`${category}-like-${id}`, !status)
     return !status;
   }
