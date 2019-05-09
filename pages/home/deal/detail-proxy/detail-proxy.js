@@ -3,9 +3,11 @@ var data_base = require('../../../../fake-data/ask-data.js')
 Page({
 
   data: {
+    dealId: "",
     dealDetailProxy: null,
     collectImgUrl: "/images/home/deal/detail/collect.png",
     chatImgUrl: "/images/home/deal/detail/chat.png",
+    chartImgUrl: "/images/home/deal/detail/chart.png",
     longitude: 0,
     latitude: 0,
     markers: [],
@@ -25,7 +27,7 @@ Page({
     // }]
   },
 
-  onLoad: function (options) {
+  onLoad: function(options) {
     let dealId = options.dealId
     console.log(dealId)
 
@@ -56,7 +58,7 @@ Page({
   },
 
   // 动态设置页面标题
-  onReady: function () {
+  onReady: function() {
     wx.setNavigationBarTitle({
       title: this.data.dealDetailProxy.title
     })
@@ -72,11 +74,20 @@ Page({
     })
   },
 
+  // 点击联系她
   onChatTap() {
     wx.showToast({
       title: '抱歉，联系功能暂未开发',
       icon: "none"
     })
+  },
+
+  // 点击购物车后跳转到订单界面
+  onChartTap() {
+    wx.navigateTo({
+      url: `detail-proxy-order/detail-proxy-order?dealId=${this.data.dealId}`
+    })
+
   }
 
 })

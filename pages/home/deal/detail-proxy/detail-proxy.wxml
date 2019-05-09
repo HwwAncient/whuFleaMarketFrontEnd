@@ -27,6 +27,10 @@
       <image src='{{chatImgUrl}}' />
       <text>联系她</text>
     </view>
+    <view class='bottom-item' bindtap='onChartTap'>
+      <image src='{{chartImgUrl}}' />
+      <text>下单</text>
+    </view>
   </view>
 
   <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="16" markers="{{markers}}" bindmarkertap="onMarkerTap" polyline="{{polyline}}">
