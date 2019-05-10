@@ -84,8 +84,10 @@ Page({
 
   // 点击购物车后跳转到订单界面
   onChartTap() {
+
+    const dealDetailProxy = JSON.stringify(this.data.dealDetailProxy)
     wx.navigateTo({
-      url: `detail-proxy-order/detail-proxy-order?dealId=${this.data.dealId}`
+      url: `detail-proxy-order/detail-proxy-order?dealDetailProxy=${dealDetailProxy}`
     })
 
   }

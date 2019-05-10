@@ -1,0 +1,30 @@
+<view class="container">
+
+  <view class='consignee-info'>
+    <l-list title="选择收货地址" bind:lintap="onChooseAddress" />
+    <l-list title="收货人姓名：" right-desc="{{consigneeInfo.userName}}" is-link="{{false}}" />
+    <l-list title="手机号码：" right-desc="{{consigneeInfo.telNumber}}" is-link="{{false}}" />
+    <l-list title="所在校区：" right-desc="{{consigneeInfo.detailInfo}}" is-link="{{false}}" />
+  </view>
+
+  <view class='deal-info'>
+    <l-card type="primary" image="{{dealDetailProxy.images[0]}}" title="{{dealDetailProxy.title}}" full="{{true}}">
+      <view class="info-content">
+        <text>价格：{{dealDetailProxy.price}}</text>
+        <text class='info-location'>商家代理点：{{dealDetailProxy.address.name}}</text>
+      </view>
+    </l-card>
+  </view>
+
+  <view class='delivery-address'>
+    <l-list title="收货地址：" right-desc="{{proxyAddress==null?dealDetailProxy.address.name:proxyAddress}}代理点" is-link="{{false}}" />
+    <l-list l-class-right="change-text" right-desc="更改代理地点" bind:lintap="onChangeProxy" />
+  </view>
+
+  <view class='tip'>
+    <text>未确认收款前随时可以退款哦！</text>
+  </view>
+
+  <view class='bottom-bar'>
+  </view>
+</view>

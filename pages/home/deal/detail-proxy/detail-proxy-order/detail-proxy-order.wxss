@@ -1,0 +1,46 @@
+.container {
+  background-color: rgb(252, 252, 252);
+
+}
+
+.consignee-info {
+  background-color: white;
+  margin-bottom: 40rpx;
+}
+
+.info-content {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rpx;
+}
+
+.info-content text {
+  font-size: 30rpx;
+  line-height: 60rpx;
+}
+
+.deal-info {
+  background-color: white;
+  margin-bottom: 40rpx;
+}
+
+.delivery-address {
+  background-color: white;
+}
+
+.change-text{
+  color:#999;
+}
+
+.tip {
+  text-align: center;
+}
+
+.tip text{
+  font-size: 25rpx;
+  line-height: 60rpx;
+}
+
+.bottom-bar {
+}

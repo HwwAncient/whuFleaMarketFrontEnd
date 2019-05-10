@@ -161,6 +161,12 @@ const deal_detail_free = {
     "longitude": 114.35536980628967
   },
   "title": "《活着》",
+  "owner": {
+    "id": "4",
+    "name": "李四",
+    "headSrc": "http://localhost:8080/images/users/4.jpg",
+    "school": "文学院"
+  }
 }
 
 const deal_detail_proxy = {
@@ -179,6 +185,12 @@ const deal_detail_proxy = {
     "longitude": 114.35536980628967
   },
   "title": "书柜",
+  "owner": {
+    "id": "4",
+    "name": "李四",
+    "headSrc": "http://localhost:8080/images/users/4.jpg",
+    "school": "文学院"
+  }
 }
 
 module.exports = {
