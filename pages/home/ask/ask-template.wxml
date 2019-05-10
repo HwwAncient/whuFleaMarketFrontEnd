@@ -1,15 +1,15 @@
 <template name="askTemplate">
   <view class='askItem'>
-    <l-card type="avatar" l-class="card" image="{{owner.headSrc}}" title="{{owner.name}}" describe="{{owner.school}}">
+    <l-card type="avatar" l-class="card" image="{{askItem.owner.headSrc}}" title="{{askItem.owner.name}}" describe="{{askItem.owner.school}}">
       <view class="ask-info">
-        <text class="address">address: {{address}}</text>
-        <text class="time">time: {{time}}</text>
+        <text class="address">address: {{askItem.address}}</text>
+        <text class="time">time: {{askItem.time}}</text>
       </view>
       <view class="avter-content">
-        {{content}}
+        {{askItem.content}}
       </view>
 
-      <l-tag shape="circle" bg-color="red" font-color="white" slot="more" size="large">
+      <l-tag shape="circle" bg-color="red" font-color="white" slot="more" size="large" data-ask-item="{{askItem}}" bind:lintap="linkTap">
         联系TA
       </l-tag>
     </l-card>

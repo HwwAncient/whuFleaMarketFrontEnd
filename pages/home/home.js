@@ -86,7 +86,13 @@ Page({
     wx.navigateTo({
       url: 'share/share-detail/share-detail' + "?shareItem=" + shareItem,
     })
-  }
+  },
 
+  linkTap: function(event) {
+    var askItem = JSON.stringify(event.currentTarget.dataset.askItem)
+    wx.navigateTo({
+      url: 'ask/chat/chat' + "?askItem=" + askItem,
+    })
+  }
   
 })

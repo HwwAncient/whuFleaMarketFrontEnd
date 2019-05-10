@@ -2,6 +2,7 @@
   "usingComponents": {
     "l-card": "/dist/card/index",
     "l-tag": "/dist/tag/index",
+    "l-button": "/dist/button/index",
     "l-input": "/dist/input/index"
   }
 }
