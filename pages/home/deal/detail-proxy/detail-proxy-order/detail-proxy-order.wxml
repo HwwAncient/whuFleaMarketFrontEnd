@@ -26,5 +26,11 @@
   </view>
 
   <view class='bottom-bar'>
+    <view class='totalPrice'>
+      <text>总计：{{dealDetailProxy.price}}</text>
+    </view>
+    <view class='confirmOrder'>
+      <text>确认支付</text>
+    </view>
   </view>
 </view>

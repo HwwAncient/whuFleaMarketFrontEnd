@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "l-list": "/dist/list/index",
-    "l-card": "/dist/card/index"
+    "l-card": "/dist/card/index",
+    "l-button": "/dist/button/index"
   }
 }
