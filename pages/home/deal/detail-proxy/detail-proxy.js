@@ -76,9 +76,9 @@ Page({
 
   // 点击联系她
   onChatTap() {
-    wx.showToast({
-      title: '抱歉，联系功能暂未开发',
-      icon: "none"
+    // TODO 实现真正的聊天功能
+    wx.navigateTo({
+      url: `../../ask/chat/chat?headSrc=${this.data.dealDetailProxy.owner.headSrc}`,
     })
   },
 

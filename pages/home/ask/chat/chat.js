@@ -44,7 +44,8 @@ Page({
    */
   data: {
     scrollHeight: '100vh',
-    inputBottom: 0
+    inputBottom: 0,
+    headSrc:""
   },
 
   /**
@@ -52,11 +53,9 @@ Page({
    */
   onLoad: function(options) {
     initData(this);
-    let askItem = JSON.parse(options.askItem)
-    console.log(askItem)
-
+    let headSrc = options.headSrc
     this.setData({
-      askItem
+      headSrc
     });
   },
 

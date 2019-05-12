@@ -164,7 +164,7 @@ const deal_detail_free = {
   "owner": {
     "id": "4",
     "name": "李四",
-    "headSrc": "http://localhost:8080/images/users/4.jpg",
+    "headSrc": "/images/home/user-image1.jpg",
     "school": "文学院"
   }
 }
@@ -188,7 +188,7 @@ const deal_detail_proxy = {
   "owner": {
     "id": "4",
     "name": "李四",
-    "headSrc": "http://localhost:8080/images/users/4.jpg",
+    "headSrc": "/images/home/user-image3.jpg",
     "school": "文学院"
   }
 }

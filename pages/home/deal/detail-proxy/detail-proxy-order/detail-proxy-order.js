@@ -40,6 +40,23 @@ Page({
         })
       }
     })
+  },
+
+  onPayTap: function() {
+
+    // TODO 开启支付功能
+    wx.navigateTo({
+      url: `success/success?proxyAddress=${this.data.proxyAddress||this.data.dealDetailProxy.address.name}`,
+    })
+    // wx.navigateBack({
+    //   delta: 2,
+    //   success: res => {
+    //     wx.showToast({
+    //       icon: "none",
+    //       title: '支付'
+    //     })
+    //   }
+    // })
   }
 
 })

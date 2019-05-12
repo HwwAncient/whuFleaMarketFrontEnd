@@ -1,10 +1,10 @@
 <view class="container">
 
   <view class='consignee-info'>
-    <l-list title="选择收货地址" bind:lintap="onChooseAddress" />
-    <l-list title="收货人姓名：" right-desc="{{consigneeInfo.userName}}" is-link="{{false}}" />
-    <l-list title="手机号码：" right-desc="{{consigneeInfo.telNumber}}" is-link="{{false}}" />
-    <l-list title="所在校区：" right-desc="{{consigneeInfo.detailInfo}}" is-link="{{false}}" />
+    <l-list title="选择收货地址" l-class-content="change-text" left-gap="8" bind:lintap="onChooseAddress" />
+    <l-list title="收货人姓名：" left-gap="8" right-desc="{{consigneeInfo.userName}}" is-link="{{false}}" />
+    <l-list title="手机号码：" left-gap="8" right-desc="{{consigneeInfo.telNumber}}" is-link="{{false}}" />
+    <l-list title="所在校区：" left-gap="8" right-desc="{{consigneeInfo.detailInfo}}" is-link="{{false}}" />
   </view>
 
   <view class='deal-info'>
@@ -17,7 +17,7 @@
   </view>
 
   <view class='delivery-address'>
-    <l-list title="收货地址：" right-desc="{{proxyAddress==null?dealDetailProxy.address.name:proxyAddress}}代理点" is-link="{{false}}" />
+    <l-list title="收货地址：" left-gap="8" right-desc="{{proxyAddress==null?dealDetailProxy.address.name:proxyAddress}}代理点" is-link="{{false}}" />
     <l-list l-class-right="change-text" right-desc="更改代理地点" bind:lintap="onChangeProxy" />
   </view>
 
@@ -29,7 +29,7 @@
     <view class='totalPrice'>
       <text>总计：{{dealDetailProxy.price}}</text>
     </view>
-    <view class='confirmOrder'>
+    <view class='confirmOrder' bind:tap="onPayTap">
       <text>确认支付</text>
     </view>
   </view>

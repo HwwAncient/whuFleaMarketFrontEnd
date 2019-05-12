@@ -11,7 +11,8 @@
     "pages/home/deal/detail-proxy/detail-proxy",
     "pages/home/deal/detail-proxy/detail-proxy-order/detail-proxy-order",
     "pages/home/share/share-detail/share-detail",
-    "pages/home/ask/chat/chat"
+    "pages/home/ask/chat/chat",
+    "pages/home/deal/detail-proxy/detail-proxy-order/success/success"
   ],
   "window": {
     "backgroundTextStyle": "light",

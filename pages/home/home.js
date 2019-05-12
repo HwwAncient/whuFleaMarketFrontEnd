@@ -89,9 +89,10 @@ Page({
   },
 
   linkTap: function(event) {
-    var askItem = JSON.stringify(event.currentTarget.dataset.askItem)
+    var headSrc = event.currentTarget.dataset.askItem.owner.headSrc
+    console.log(headSrc)
     wx.navigateTo({
-      url: 'ask/chat/chat' + "?askItem=" + askItem,
+      url: 'ask/chat/chat' + "?headSrc=" + headSrc,
     })
   }
   

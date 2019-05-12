@@ -1,0 +1,18 @@
+Page {
+  background: rgb(252, 252, 252);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 300rpx;
+}
+
+l-button {
+  margin-top: 100rpx;
+}
+
+text {
+  line-height: 60rpx;
+}

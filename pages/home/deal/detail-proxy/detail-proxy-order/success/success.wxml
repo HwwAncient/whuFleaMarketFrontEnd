@@ -1,0 +1,6 @@
+<view class="container">
+  <text>下单成功！</text>
+  <text>储物柜位于{{proxyAddress}}代理点</text>
+  <l-button type="default" size="medium" bind:lintap="onUnlockTap">开锁</l-button>
+  <l-button type="default" size="medium" bind:lintap="onReturnTap">返回首页</l-button>
+</view>
