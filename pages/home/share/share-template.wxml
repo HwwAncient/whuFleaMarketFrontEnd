@@ -39,7 +39,9 @@
       <l-tabpanel tab="文理学部" key="deal" slot="deal">
         <view class="tab-content">
         <block wx:for="{{shareList}}" wx:for-item="shareItem" wx:key="key" wx:for-index="idx">
+        <view wx:if="{{shareItem.status==0}}">
          <template is="share-Location-Template" data="{{shareItem}}"/>
+         </view>
          </block>
         </view>
       </l-tabpanel>

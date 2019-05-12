@@ -21,12 +21,16 @@ Page({
     });
   },
 
-  sureTap:function(){
-
+  sureTap: function (options){
+    var status = this.data.shareItem.status
+    console.log(status)
     wx.showToast({
       title: '申请成功！',
       icon: 'success',
       duration: 2000
+    }),
+    this.setData({
+      status:1
     })
   }
 })

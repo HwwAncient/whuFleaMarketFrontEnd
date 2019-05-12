@@ -31,7 +31,7 @@
     </view>
     <view class='bottom-item'>
     <view class="sure">
-    <l-button type="error" bind:lintap="sureTap">  确认使用  </l-button>
+    <l-button type="error" data-share-status="{{shareItem.status}}" bind:lintap="sureTap">  确认使用  </l-button>
     </view>
     
     </view>
