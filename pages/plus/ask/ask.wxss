@@ -1,1 +1,34 @@
-/* pages/plus/ask/ask.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.picture image{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.location{
+  margin-top:5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.tag{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.publish{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20rpx;
+}

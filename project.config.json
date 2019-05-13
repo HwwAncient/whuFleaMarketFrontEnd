@@ -40,7 +40,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 4,
 			"list": [
 				{
 					"id": 0,
@@ -61,6 +61,19 @@
 					"name": "订单成功界面",
 					"pathName": "pages/home/deal/detail-proxy/detail-proxy-order/success/success",
 					"query": "proxyAddress=信息学部C4舍",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "发布求购",
+					"pathName": "pages/plus/ask/ask",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "发布",
+					"pathName": "pages/plus/publish/publish",
 					"scene": null
 				}
 			]

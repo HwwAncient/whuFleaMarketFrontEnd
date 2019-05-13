@@ -1,11 +1,21 @@
-// pages/plus/publish/publish.js
+import {
+  categoryItems,
+  modeItems
+} from "../../../config.js"
+
 Page({
+
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    name: '',
+    address: null,
+    latitude: '',
+    longitude: '',
+    askCategory: null,
+    askMode: null,
   },
 
   /**
@@ -15,52 +25,47 @@ Page({
 
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  onChangeCategory: function () {
+    wx.showActionSheet({
+      itemList: categoryItems,
+      success: (res) => {
+        console.log(res.tapIndex)
+        this.setData({
+          askCategory: categoryItems[res.tapIndex]
+        })
+      }
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  onChangeMode: function () {
+    wx.showActionSheet({
+      itemList: modeItems,
+      success: (res) => {
+        console.log(res.tapIndex)
+        this.setData({
+          askMode: modeItems[res.tapIndex]
+        })
+      }
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
 
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  getLocation: function () {
+    var _this = this;
+    wx.chooseLocation({
+      success: function (res) {
+        var name = res.name
+        var address = res.address
+        var latitude = res.latitude
+        var longitude = res.longitude
+        _this.setData({
+          name: name,
+          address: address,
+          latitude: latitude,
+          longitude: longitude
+        })
+      }
+    })
   }
+
 })

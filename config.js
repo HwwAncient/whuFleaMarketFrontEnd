@@ -17,7 +17,23 @@ const proxyItems = [
 ]
 
 
+const categoryItems = [
+  '食物',
+  '书',
+  '化妆品',
+  '宿舍神器',
+  '体育用品',
+  '其他'
+]
+
+const modeItems = [
+  '自由当面交易',
+  '代理点交易'
+]
+
 export {
   config,
-  proxyItems
+  proxyItems,
+  categoryItems,
+  modeItems
 }
