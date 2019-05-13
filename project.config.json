@@ -40,11 +40,10 @@
 			"list": []
 		},
 		"miniprogram": {
-<<<<<<< HEAD
 			"current": 4,
-=======
+
 			"current": 3,
->>>>>>> master
+
 			"list": [
 				{
 					"id": 0,
@@ -69,7 +68,7 @@
 				},
 				{
 					"id": -1,
-<<<<<<< HEAD
+
 					"name": "发布求购",
 					"pathName": "pages/plus/ask/ask",
 					"query": "",
@@ -79,13 +78,13 @@
 					"id": -1,
 					"name": "发布",
 					"pathName": "pages/plus/publish/publish",
-					"scene": null
-=======
+					"scene": null,
+
 					"name": "我的界面",
 					"pathName": "pages/my/my",
 					"query": "",
 					"scene": null
->>>>>>> master
+
 				}
 			]
 		}
