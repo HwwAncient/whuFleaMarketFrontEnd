@@ -7,8 +7,16 @@ import {
 
 class LoginModel extends HTTP {
 
+  // 用户登录提供后台openid
+  login(){
+    this.opWithOpenid((openid)=>{
+      // TODO 请求服务器告知openid用户登录，后台将openid存入session
+      console.log(openid + " 用户已登录")
+    })
+  }
+
   // 用户登录获取code
-  login() {
+  register() {
 
     return new Promise((resolve, reject) => {
         wx.login({
@@ -81,14 +89,7 @@ class LoginModel extends HTTP {
         })
     }
     else callback(openid)
-    
-
-
-
   }
-
-  
- 
 
 }
 

@@ -1,1 +1,50 @@
-/* pages/my/my.wxss */
+Page {
+  background-color: rgb(252, 252, 252);
+}
+
+.container {
+}
+
+.header {
+  background-color: white;
+  margin-bottom: 30rpx;
+}
+
+l-avatar {
+  margin-left: 20rpx;
+}
+
+.modify {
+}
+
+.user-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 50rpx;
+  padding-bottom: 50rpx;
+  justify-content: space-between;
+}
+
+.my-text{
+  font-size: 30rpx;
+  color: #666;
+}
+
+.user-my {
+  padding-bottom: 20rpx;
+}
+
+.content {
+  background-color: white;
+  margin-bottom: 30rpx;
+}
+
+.setting {
+  background-color: white;
+  margin-bottom: 30rpx;
+}
+
+.change-text {
+  color: #999;
+}

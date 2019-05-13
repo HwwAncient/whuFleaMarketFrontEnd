@@ -1,2 +1,38 @@
-<!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+<view class='container'>
+
+  <view class='header'>
+
+    <view class='user-info'>
+      <l-avatar open-data="{{['userAvatarUrl','userNickName']}}" />
+      <!-- <view class="modify">修改资料</view> -->
+    </view>
+
+    <view class='user-my'>
+      <l-grid show-col-border="true" bind:lintap="onGridTap">
+        <l-grid-item key="one" slot="one">
+          <view class="my-text">我的发布</view>
+        </l-grid-item>
+        <l-grid-item key="two" slot="two">
+          <view class="my-text">我的订单</view>
+        </l-grid-item>
+        <l-grid-item key="three" slot="three">
+          <view class="my-text">我的收藏</view>
+        </l-grid-item>
+      </l-grid>
+    </view>
+
+  </view>
+
+  <view class='content'>
+    <l-list title="我的消息" icon="eye" left-gap="20" />
+    <l-list title="最近浏览" icon="time" left-gap="20" />
+    <l-list title="我要维权" icon="customer-service" left-gap="20" />
+    <l-list title="邀请好友" icon="share" left-gap="20" right-desc="邀请好友得红包" l-class-right="change-text" />
+    <l-list title="反馈意见" icon="default" left-gap="20" />
+  </view>
+
+  <view class='setting'>
+    <l-list title="系统设置" icon="setting" left-gap="20" />
+  </view>
+
+</view>

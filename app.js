@@ -10,7 +10,7 @@ App({
     // 检查用户是否已经在后台注册，若未注册则注册，已注册则不采取动作
     let openid = wx.getStorageSync("openid")
     if (!openid) {
-      loginModel.login()
+      loginModel.register()
         .then(res => {
           wx.setStorageSync("openid", res.openid)
           //TODO 向后台POST注册用户
@@ -20,7 +20,8 @@ App({
           })
         })
     } else {
-      // TODO 告知后台用户已经登录
+      // TODO 不注册直接登录
+      loginModel.login()
     }
 
 

@@ -1,3 +1,4 @@
+
 var data_base = require('../../fake-data/ask-data.js')
 
 Page({
