@@ -25,15 +25,12 @@
     </l-card>
   </view>
 
-<view class='bottom-bar'>
-    <view class='bottom-item'>
+    <view class='bottom-bar'>
+    <view class='totalPrice'>
       <text>总计：32元</text>
     </view>
-    <view class='bottom-item'>
-    <view class="sure">
-    <l-button type="error" data-share-status="{{shareItem.status}}" bind:lintap="sureTap">  确认使用  </l-button>
-    </view>
-    
+    <view class='confirmOrder' data-share-status="{{shareItem.status}}" bind:lintap="sureTap">
+      <text>确认支付</text>
     </view>
   </view>
 

@@ -7,22 +7,36 @@
   margin-right: 5rpx;
 }
 
+
 .bottom-bar {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  height: 90rpx;
-  background-color: rgba(252, 252, 252, 0.986);
-  justify-content: space-around;
-  align-items: center;
   position: fixed;
-  bottom: 0px;
+  bottom: 0;
+  width: 100%;
+  height: 100rpx;
   border-top: solid 1rpx #ddd;
-  z-index: 100;
 }
 
-.bottom-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.totalPrice {
+  background-color: rgb(252, 252, 252);
+  width: 50%;
+  text-align: center;
+}
+
+.totalPrice text {
+  position: relative;
+  top: 18rpx;
+}
+
+.confirmOrder {
+  background-color: red;
+  width: 50%;
+  text-align: center;
+}
+
+.confirmOrder text {
+  position: relative;
+  top: 18rpx;
+  color: white;
 }

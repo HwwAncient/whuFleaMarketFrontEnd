@@ -2,8 +2,7 @@
   <view class='askItem'>
     <l-card type="avatar" l-class="card" image="{{askItem.owner.headSrc}}" title="{{askItem.owner.name}}" describe="{{askItem.owner.school}}">
       <view class="ask-info">
-        <text class="address">address: {{askItem.address}}</text>
-        <text class="time">time: {{askItem.time}}</text>
+        <text class="time_address">发布于 {{askItem.time}}   {{askItem.address}}</text>
       </view>
       <view class="avter-content">
         {{askItem.content}}
