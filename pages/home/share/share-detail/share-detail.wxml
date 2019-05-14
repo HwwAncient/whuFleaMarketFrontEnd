@@ -29,7 +29,7 @@
     <view class='totalPrice'>
       <text>总计：32元</text>
     </view>
-    <view class='confirmOrder' data-share-status="{{shareItem.status}}" bind:lintap="sureTap">
+    <view class='confirmOrder' data-share-status="{{shareItem.status}}" bind:tap="sureTap">
       <text>确认支付</text>
     </view>
   </view>
